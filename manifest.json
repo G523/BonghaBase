@@ -1,0 +1,24 @@
+{
+    // Required
+    "manifest_version": 2,
+    "name": "BonghaBase",
+    "version": "1.0",
+
+    // Recommended
+    "description": "FNBASE 확장기능 by G523",
+    "icons": { "128" : "g523.png"},
+    "browser_action": {
+        "default_popup": "index.html"
+    },
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "permissions": ["storage","activeTab"],
+    "content_scripts": [
+     {
+       "matches": ["https://fnbase.xyz/*"],
+       "js": ["contentScript.js"],"run_at":"document_start"
+     }
+   ]
+}

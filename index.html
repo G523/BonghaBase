@@ -1,0 +1,56 @@
+<html>
+    <meta charset="UTF-8">
+    <style>
+            BODY {width : 250px; min-height:250px;margin:0;}
+        .head{
+            padding-top:5px;
+            padding-bottom:5px;
+        }
+        .alive{
+            padding-top:5px;
+            padding-bottom:5px;
+            background-color:black;
+            color:white;
+            text-align:center;
+        }
+        .name {
+            font-size:2em;
+            font-weight:bold;
+        }
+    </style>
+    <body>
+        <div class="alive" id="alive">
+        </div>
+        <div class="head">
+        <img src="g523.png"/><br>
+        <div class="name">BONGHA BASE 1.0</div>
+        아주 '대단한'사이트 fnbase의 기능을 더욱 더 성능좋게 만들어주는 확장프로그램이다 이기. by <a href="https://github.com/G523">G523</a>
+        </div>
+        <div class='main'>
+        <b>기능 목록</b><br>
+        <input type="checkbox" id="ad"/>광고창을 알림창으로<br>
+        <div id="adc" style="display:none;">
+        병신같은 비틱광고와 걸리적거리는 알림창을 한번에 없애주는 기능이노. 광고창은 알림창으로 바뀐다 게이야!
+        </div> 
+        <input type="checkbox" id="arca"/>아카라이브 모드 (beta)<br>
+        <div id="arcac" style="display:none;">
+        픈비 디자인이 아카라이브랑 유사하게 바뀐다 익이야! (Beta 버전임)
+        </div>
+        <input type="checkbox" id="bb"/>게시판 차단<br>
+        <div id="bbc" style="display:none;">
+        보기 좆 같은 게시판을 시원하게 날려준다 이기야!
+        게시판의 태그를 한줄씩 입력해라 이기<br>
+        <textarea id="bbt">입력</textarea><br>
+        <button id="bbb">적용!</button>
+        </div>   
+        <input type="checkbox" id="memo"/>사용자 메모
+        <div id="memoc" style="display:none;">
+            닉네임-내용 형식으로 한줄씩 입력해라 이기<br>
+            <textarea id="memot">입력</textarea><br>
+            <button id="memob">적용!</button>
+        </div>
+            <br><br><b>변경사항을 확인하려면 웹사이트를 새로고침하십시오.</b>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
